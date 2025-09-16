@@ -47,7 +47,7 @@ def play_song():
             rotate_vinyl()
         else:
             pygame.mixer.music.load(current_song)
-            pygame.mixer.music.play()
+            pygame.mixer.music.play(loops=-1)
             rotating = True
             rotate_vinyl()
 
@@ -95,3 +95,4 @@ volume_slider.set(0.5)
 volume_slider.pack(pady=20)
 
 root.mainloop()
+
